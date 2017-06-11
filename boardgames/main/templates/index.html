@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To jest tytuł strony</title>
+</head>
+<header>
+    <h1>A list of my boardgames</h1>
+</header>
+<body>
+Sweet dessert jelly beans bear claw. Chocolate chocolate cotton candy danish oat cake. Sugar plum danish lollipop.
+Ice cream gummi bears marshmallow sesame snaps tiramisu sweet roll pudding tiramisu sweet. Candy oat cake lollipop.
+Gingerbread gummies brownie lemon drops. Toffee soufflé topping chocolate cake. Cotton candy marshmallow sweet roll dessert sweet roll.
+Macaroon dragée carrot cake dragée halvah cotton candy fruitcake. Jujubes jelly beans jujubes gummi bears croissant toffee.
+Pudding marshmallow powder topping jelly beans macaroon jelly dragée chocolate. Bonbon bear claw fruitcake chupa chups tiramisu tootsie roll.
+Powder tiramisu gingerbread donut sesame snaps candy canes. Jujubes soufflé tootsie roll fruitcake cupcake icing.
+<div>{{name}}</div>
+
+<ul>
+    {% for boardgames in boardgames%}
+    <li><a href="/main/details/{{boardgames.id}}">{{boardgames.title}}</a>: {{boardgames.text}}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
